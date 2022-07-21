@@ -36,3 +36,53 @@ h1 {
     background-color: #2525257f;
 }
 
+#filters {
+    margin: 0 0 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: row;
+}
+
+.fa-filter {
+    font-size: 3em;
+    color: #333333;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+    transition: transform 200ms;
+}
+
+.fa-filter:active {
+    transform: scale(0.90);
+    background-color: #2525257f;
+}
+
+.search-bar {
+    position: relative;
+    padding: 17px 0px 0px 0px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.search-bar input {
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    background-color: #333333;
+    color: aliceblue;
+    border: none;
+    width: 20%;
+    transition: width 200ms ease-in-out;
+}
+
+.search-bar input:focus {
+    width: 100%;
+}
+
+.fa-magnifying-glass {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: #333333;
+}
