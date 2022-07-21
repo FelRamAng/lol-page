@@ -3,8 +3,8 @@ body {
 }
 
 .center-logo {
-    width: 300px;
-    height: 132.42px;
+    width: 256px;
+    height: 113px;
 
     margin: 20px auto;
     display: block;
@@ -22,13 +22,10 @@ h1 {
 }
 
 .rol-icon {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     /*padding-left: 80px;
     padding-right: 80px;
     */
 }
 
-.hr-top {
-    color: rgb(121, 11, 11);
-}
