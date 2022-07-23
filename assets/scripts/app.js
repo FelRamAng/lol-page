@@ -6,12 +6,12 @@ fetch(`http://ddragon.leagueoflegends.com/cdn/11.19.1/data/${language}/champion.
     .then(data => {
         let champions = data.data;
         let championsArray = Object.keys(champions).map(key => champions[key]);
-        let championsList = document.querySelector('.container');
+        let championsList = document.querySelector('.champion-container');
         championsArray.forEach((champion, id) => {
             let championElement = document.createElement('div');
             championElement.classList.add('champion');
             championElement.innerHTML = `
-                <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg" alt="${champion.id}" width="120px">
+                <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg" alt="${champion.id}" width="250px">
                 <h3>${champion.name}</h3>
                 <p>${champion.title}</p>
             `;
