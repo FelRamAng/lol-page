@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <title>LoL Page</title>
+    <!-- FontAwesomeIcons -->
     <script src="https://kit.fontawesome.com/c598be8939.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap & JQuery-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
     <script src="assets/scripts/app.js"></script>
-    
+
     <img class="center-logo" src="assets/images/lol_logo.png">
 
     <section id="sticky">
@@ -25,7 +31,6 @@
             <img class="rol-icon role-bot" src="https://static.metafy.gg/cdn-cgi/image/height=310,fit=contain,quality=100,sharpen=1,format=webp/uploads/store/collection_tag/251ae545-2c24-4bac-958a-0c8c067f77ea/cutout/afd6a1f9715e58a6b7b3844549b47181.png" alt="bot_icon">
             <img class="rol-icon role-jungle" src="https://static.metafy.gg/cdn-cgi/image/height=310,fit=contain,quality=100,sharpen=1,format=webp/uploads/store/collection_tag/8e6f227a-634f-42d2-9c33-af71194d740f/cutout/3c25906f29edb50113cff350aee00b84.png" alt="jungle_icon">
             <img class="rol-icon role-support" src="https://static.metafy.gg/cdn-cgi/image/height=310,fit=contain,quality=100,sharpen=1,format=webp/uploads/store/collection_tag/f62d0077-6cb9-43f0-bf87-2dd5bc067c0c/cutout/36ce0e88a149718dfd5adc2f238793cb.png" alt="support_icon">
-            
             <hr class="hr-top" width="85%">
         </section>
     
@@ -38,10 +43,30 @@
         </section>
     </section>
     
-    <div class="champ-container">
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
     
-
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
     </div>
+  </div>
+
+    <div class="champ-container">
+    </div>
+
 
 </body>
 </html>
