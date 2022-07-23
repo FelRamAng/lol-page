@@ -1,33 +1,5 @@
 let language = 'es_ES';
 
-
-/*
-<div class="champion-card">
-            <img class="champ-img" src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg">
-            <div class="champ-overlap">
-                <div class="champ-info">
-                    <h3 class="champ-name">
-                        Aatrox
-                    </h3>
-                <p class="champ-title">
-                    La Espada de los Oscuros
-                </p>
-                </div>
-            </div>
-        </div>
-
-        (champion, id) => {
-            let championElement = document.createElement('div');
-            championElement.classList.add('champion');
-            championElement.innerHTML = `
-                <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg" alt="${champion.id}" width="250px">
-                <h3>${champion.name}</h3>
-                <p>${champion.title}</p>
-            `;
-            championsList.appendChild(championElement);
-            console.log(champion);
-        });
-*/
 fetch(`http://ddragon.leagueoflegends.com/cdn/11.19.1/data/${language}/champion.json`)
     .then(response => response.json())
     .then(data => {
@@ -37,6 +9,9 @@ fetch(`http://ddragon.leagueoflegends.com/cdn/11.19.1/data/${language}/champion.
         championsArray.forEach(champion => {
             let championCard = document.createElement('div');
             championCard.classList.add('champion-card');
+            championCard.addEventListener('click', () => {
+                showChampionData(champion);
+            });
             let championImg = document.createElement('img');
             championImg.classList.add('champ-img');
             championImg.src = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`;
@@ -56,35 +31,15 @@ fetch(`http://ddragon.leagueoflegends.com/cdn/11.19.1/data/${language}/champion.
             championCard.appendChild(championImg);
             championCard.appendChild(championOverlap);
             championsList.appendChild(championCard);
-        }
-        );
-    }
-    ).catch(error => console.log(error));
+        });
+    }).catch(error => console.log(error));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function showChampionData(champion) {
+    $("#myModal").modal();
+    let title = document.querySelector('.modal-title');
+    let description = document.querySelector('.modal-body');
+    title.textContent = champion.id;
+    description.innerHTML = 
+    `<p>${champion.title}</p>`;
+}
