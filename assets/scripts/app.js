@@ -42,4 +42,7 @@ function showChampionData(champion) {
     title.textContent = champion.id;
     description.innerHTML = 
     `<p>${champion.title}</p>`;
+
+    console.log(champion);
 }
+
