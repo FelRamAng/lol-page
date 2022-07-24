@@ -199,3 +199,141 @@ h1
     justify-content: space-evenly;
     align-items: center;
 }
+
+/* Detras del modal */
+.modal
+{
+
+}
+
+/* Div que contiene el modal */
+.modal-dialog
+{
+    width: 90%;
+    height: 90%;
+    border-radius: 8px;
+}
+
+.modal-img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.modal-content
+{
+    height: 100%;
+    border-radius: 8px;
+}
+
+.modal-title
+{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    right: auto;
+    bottom: auto;
+    background-color: rgba(18, 18, 18, 0.385);
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: left;
+    padding: 1% 15% 1% 1%;
+    z-index: 0;
+    border-radius: 0px 16px 16px 0px;
+    transition: 300ms ease-in-out;
+}
+
+.modal-body
+{
+    position: absolute;
+    top: 10%;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    justify-items: center;
+    text-align: left;
+    padding: 5% 1% 1% 1%;
+    border-radius: 0px 16px 16px 0px;
+    opacity: 1;
+    transition: 300ms ease-in-out;
+    z-index: 0;
+}
+
+
+.modal-title:hover
+{
+    padding: 1% 15% 5% 1%;
+}
+
+.modal-title:hover .modal-body
+{
+    transform: translateY(50%);
+}
+
+.close
+{
+    color: #fff;
+}
+
+.modal-bg-close
+{
+    position: absolute;
+    top: -2%;
+    left: 96%;
+    right: 0;
+    bottom: 90%;
+    background-color: rgba(0, 0, 0, 0.385);
+    border-radius: 8px 4px 0px 8px;
+    z-index: 0;
+
+}
+
+.modal-container-info
+{
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(18, 18, 18, 0.385);
+    border-radius: 16px 16px 4px 4px;; 
+    z-index: 1;
+    overflow: hidden;
+    transition: 300ms ease-in-out;
+}
+
+.modal-container-description
+{
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.modal-container-stats
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.stat-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2% 2% 2% 2%;
+}
+
+.modal-container-info:hover
+{
+    position: absolute;
+    top: 50%;
+}
