@@ -286,7 +286,7 @@ h1
     left: 96%;
     right: 0;
     bottom: 90%;
-    background-color: rgba(0, 0, 0, 0.385);
+    background-color: rgba(0, 0, 0, 0.45);
     border-radius: 8px 4px 0px 8px;
     z-index: 0;
 
@@ -336,4 +336,20 @@ h1
 {
     position: absolute;
     top: 50%;
+    background-color: rgba(18, 18, 18, 0.5);
+}
+
+.stat-title
+{
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    
+}
+
+.stat-data
+{
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
