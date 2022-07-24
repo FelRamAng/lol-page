@@ -250,13 +250,13 @@ h1
 .modal-body
 {
     position: absolute;
-    top: 10%;
+    top: 20%;
     font-size: 1.5em;
     font-family: 'Roboto', sans-serif;
     color: white;
     justify-items: center;
     text-align: left;
-    padding: 5% 1% 1% 1%;
+    padding: 1% 1% 1% 1%;
     border-radius: 0px 16px 16px 0px;
     opacity: 1;
     transition: 300ms ease-in-out;
@@ -281,13 +281,14 @@ h1
 
 .modal-bg-close
 {
-    position: absolute;
+    position: fixed;
+    align-items: left;
     top: -2%;
-    left: 96%;
+    left: 90%;
     right: 0;
-    bottom: 90%;
-    background-color: rgba(0, 0, 0, 0.45);
-    border-radius: 8px 4px 0px 8px;
+    bottom: 88%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.10) 40%, rgba(0, 0, 0, 0.5) 150%);
+    border-radius: 100% 4px 0px 100%;
     z-index: 0;
 
 }
@@ -319,6 +320,7 @@ h1
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 1% 1% 1% 1%;
     align-items: center;
     color: white;
 }
@@ -329,7 +331,7 @@ h1
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 2% 2% 2% 2%;
+    margin: 0% 1% 1% 1%;
 }
 
 .modal-container-info:hover
@@ -344,7 +346,6 @@ h1
     font-size: 1.3em;
     font-family: 'Roboto', sans-serif;
     color: white;
-    
 }
 
 .stat-data
@@ -352,4 +353,6 @@ h1
     font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
     color: white;
+    padding-left: 1%;
+    padding-bottom: 1%;
 }
