@@ -277,6 +277,7 @@ h1
 .close
 {
     color: #fff;
+    opacity: 70%;
 }
 
 .modal-bg-close
@@ -286,7 +287,7 @@ h1
     top: -2%;
     left: 90%;
     right: 0;
-    bottom: 88%;
+    bottom: 90%;
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.10) 40%, rgba(0, 0, 0, 0.5) 150%);
     border-radius: 100% 4px 0px 100%;
     z-index: 0;
