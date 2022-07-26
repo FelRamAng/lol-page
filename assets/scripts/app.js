@@ -47,6 +47,9 @@ function showChampionData(champion) {
     description.innerHTML = 
     `<p>${champion.title}</p>`;
 
+    let champDesc = document.querySelector('.champ-desc');
+    champDesc.innerHTML = champion.blurb;
+
     let armour = document.querySelector('.armadura');
     armour.innerHTML = champion.stats.armor;
 
