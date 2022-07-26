@@ -37,6 +37,10 @@ fetch(`http://ddragon.leagueoflegends.com/cdn/11.19.1/data/${language}/champion.
 
 function showChampionData(champion) {
     $("#myModal").modal();
+
+    let modalImg = document.querySelector('.modal-img');
+    modalImg.src = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`;
+
     let title = document.querySelector('.modal-title');
     let description = document.querySelector('.modal-body');
     title.textContent = champion.id;
